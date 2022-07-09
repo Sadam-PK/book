@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'book.dart';
-import 'book_item.dart';
+import '../controllers/book_item.dart';
+import '../models/book_model.dart';
 
 class BooksOverviewScreen extends StatelessWidget {
   BooksOverviewScreen({Key? key}) : super(key: key);

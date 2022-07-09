@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'book_overview_screen.dart';
+import 'views/book_overview_screen.dart';
 
 void main() {
   runApp(const MyApp());
