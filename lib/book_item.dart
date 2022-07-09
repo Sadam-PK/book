@@ -12,13 +12,6 @@ class BookItem extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(10),
       child: GridTile(
-        child: GestureDetector(
-          onTap: () {},
-          child: Image.network(
-            imageUrl,
-            fit: BoxFit.cover,
-          ),
-        ),
         footer: GridTileBar(
           backgroundColor: Colors.black87,
           leading: IconButton(
@@ -36,6 +29,13 @@ class BookItem extends StatelessWidget {
             ),
             onPressed: () {},
             color: Theme.of(context).primaryColor,
+          ),
+        ),
+        child: GestureDetector(
+          onTap: () {},
+          child: Image.network(
+            imageUrl,
+            fit: BoxFit.cover,
           ),
         ),
       ),
