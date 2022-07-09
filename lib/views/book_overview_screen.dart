@@ -64,17 +64,17 @@ class BooksOverviewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MyShop'),
+        title: const Text('MyShop'),
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(10.0),
         itemCount: books.length,
-        itemBuilder: (ctx, i) => BookItem(
-          books[i].id,
-          books[i].title,
-          books[i].imageUrl,
+        itemBuilder: (context, index) => BookItem(
+          books[index].id,
+          books[index].title,
+          books[index].imageUrl,
         ),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 10,
